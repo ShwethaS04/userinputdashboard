@@ -1,0 +1,27 @@
+.sign-in-info {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    background-color: #90caf9;
+    border-color: #42a5f5;
+}
+
+.error-block {
+    margin-bottom: 0.5rem;
+    border-radius: .25rem;
+    margin-top: 0.5rem;
+    color: #f44336;
+}
+
+.login-success {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #4caf50;
+    background-color: #a5d6a7;
+    border-color: #66bb6a;
+}
