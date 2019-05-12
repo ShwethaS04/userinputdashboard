@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import style from './style.css';
 import loginAsync from '../../common/utils/loginAsync';
+import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-class LoginPage extends React.Component {
+class LoginPage extends Component {
     constructor(props) {
         super(props);
 
@@ -63,6 +64,9 @@ class LoginPage extends React.Component {
     render() {
         const { username, password, submitted, loading, error } = this.state;
         const { isLoggedIn } = this.props;
+        if(isLoggedIn){
+            return <Redirect to="/home" />
+        }
         return (
             <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
                 <div className="card card-signin my-5">
